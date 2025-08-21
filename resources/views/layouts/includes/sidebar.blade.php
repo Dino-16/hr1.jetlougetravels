@@ -50,6 +50,11 @@
                 <i class="bi bi-award me-2"></i> Hiring Offer
             </a>
         </li>
+        <li class="nav-item mt-3">
+            <a href="{{ route('login') }}" class="nav-link text-danger">
+                <i class="bi bi-box-arrow-right me-2"></i> Logout
+            </a>
+        </li>
     </ul>
 
 </aside>
