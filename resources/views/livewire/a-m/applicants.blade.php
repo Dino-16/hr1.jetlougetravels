@@ -1,7 +1,7 @@
-<div class="container mt-4">
+<div class="container-fluid p-5 shadow-sm rounded">
     <div class="table-responsive">
         <table class="table table-bordered table-striped align-middle">
-            <thead class="table-dark">
+            <thead>
                 <tr>
                     <th>ID</th>
                     <th>Job Title</th>

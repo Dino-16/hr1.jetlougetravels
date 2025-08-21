@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::view('/', 'auth.login')->name('login');
+
 /* * * Dashboard * * */
 Route::view('/dashboard', 'human_resource.dashboard')->name('dashboard');
 
