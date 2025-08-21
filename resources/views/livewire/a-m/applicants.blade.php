@@ -45,7 +45,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="height: 80vh;">
-            <iframe src="http://project-a.local/api/resume/{{ $applicant->id }}" 
+            <iframe src="https://careers-hr1.jetlougetravels-ph.com/api/resume/{{ $applicant->id }}"
                     style="width:100%; height:100%;" frameborder="0"></iframe>
           </div>
         </div>
