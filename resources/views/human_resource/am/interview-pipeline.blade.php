@@ -1,1 +1,183 @@
 @extends('layouts.app')
+
+@section('content')
+<div @class(['container'])>
+
+    {{-- title --}}
+    <div @class(['mb-3'])>
+        <h1>Interview Pipeline</h1>
+    </div>
+
+    {{-- tabs --}}
+    <ul @class(['nav', 'nav-tabs']) id="myTab" role="tablist">
+
+        {{-- Overall --}}
+        <li @class(['nav-item']) role="presentation">
+            <button @class(['nav-link', 'active']) id="overall-tab" data-bs-toggle="tab" data-bs-target="#overall" type="button" role="tab" aria-controls="overall" aria-selected="true">
+                Overall
+            </button>
+        </li>
+
+        {{-- Facility Request --}}
+        <li @class(['nav-item']) role="presentation">
+            <button @class(['nav-link']) id="facility-tab" data-bs-toggle="tab" data-bs-target="#facility" type="button" role="tab" aria-controls="facility" aria-selected="false">
+                Facility Request
+            </button>
+        </li>
+
+        {{-- Scheduling --}}
+        <li @class(['nav-item']) role="presentation">
+            <button @class(['nav-link']) id="scheduling-tab" data-bs-toggle="tab" data-bs-target="#scheduling" type="button" role="tab" aria-controls="scheduling" aria-selected="false">
+                Scheduling
+            </button>
+        </li>
+
+        {{-- Interviews --}}
+        <li @class(['nav-item']) role="presentation">
+            <button @class(['nav-link']) id="interview-tab" data-bs-toggle="tab" data-bs-target="#interview" type="button" role="tab" aria-controls="interview" aria-selected="false">
+                Interviews
+            </button>
+        </li>
+
+    </ul>
+
+    {{-- tab content --}}
+    <div @class(['tab-content', 'mt-3']) id="myTabContent">
+
+        {{-- Overall --}}
+        <div @class(['tab-pane', 'fade', 'show', 'active']) id="overall" role="tabpanel" aria-labelledby="overall-tab">
+            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+                <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
+                <button @class(['btn', 'btn-primary'])>Overall</button>
+            </div>
+            <div @class(['table-responsive'])>
+                <table @class(['table', 'table-bordered', 'table-striped'])>
+                    <thead @class(['table-dark'])>
+                        <tr>
+                            <th>ID</th>
+                            <th>Facility</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FR-001</td>
+                            <td>Conference Room</td>
+                            <td>2025-08-25</td>
+                            <td>Pending</td>
+                            <td>Note</td>
+                        </tr>
+                        <tr>
+                            <td>FR-002</td>
+                            <td>Training Hall</td>
+                            <td>2025-08-26</td>
+                            <td>Approved</td>
+                            <td>Note</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {{-- Facility Request --}}
+        <div @class(['tab-pane', 'fade']) id="facility" role="tabpanel" aria-labelledby="facility-tab">
+            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+                <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
+                <button @class(['btn', 'btn-primary'])>Request Facility</button>
+            </div>
+            <div @class(['table-responsive'])>
+                <table @class(['table', 'table-bordered', 'table-striped'])>
+                    <thead @class(['table-dark'])>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Facility</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FR-001</td>
+                            <td>Conference Room</td>
+                            <td>2025-08-25</td>
+                            <td>Pending</td>
+                            <td>Note</td>
+                        </tr>
+                        <tr>
+                            <td>FR-002</td>
+                            <td>Training Hall</td>
+                            <td>2025-08-26</td>
+                            <td>Approved</td>
+                            <td>Note</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {{-- Scheduling --}}
+        <div @class(['tab-pane', 'fade']) id="scheduling" role="tabpanel" aria-labelledby="scheduling-tab">
+            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+                <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
+                <button @class(['btn', 'btn-primary'])>Add Schedule</button>
+            </div>
+            <div @class(['table-responsive'])>
+                <table @class(['table', 'table-bordered', 'table-striped'])>
+                    <thead @class(['table-dark'])>
+                        <tr>
+                            <th>ID</th>
+                            <th>Facility</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FR-003</td>
+                            <td>Training Hall</td>
+                            <td>2025-08-27</td>
+                            <td>Approved</td>
+                            <td>Note</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {{-- Interviews --}}
+        <div @class(['tab-pane', 'fade']) id="interview" role="tabpanel" aria-labelledby="interview-tab">
+            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+                <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
+                <button @class(['btn', 'btn-primary'])>Add Interview</button>
+            </div>
+            <div @class(['table-responsive'])>
+                <table @class(['table', 'table-bordered', 'table-striped'])>
+                    <thead @class(['table-dark'])>
+                        <tr>
+                            <th>ID</th>
+                            <th>Candidate</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INT-001</td>
+                            <td>John Doe</td>
+                            <td>2025-08-28</td>
+                            <td>Pending</td>
+                            <td>Note</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+@endsection
