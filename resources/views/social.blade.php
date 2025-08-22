@@ -75,7 +75,7 @@
 
                     {{-- employee img --}}
                     <div @class(['col-sm-2', 'justify-center-content', 'align-items-center'])>
-                        <img src="https://media.istockphoto.com/id/531693146/photo/portrait-of-a-young-japanese-man-looking-to-the-side.jpg?s=612x612&w=0&k=20&c=x2FymsZ8y9xaATnCq_dYhxxRteBFmLL7-KyGu6AjcGU="
+                        <img src="https://i.pinimg.com/736x/81/0c/74/810c7414ea6541dd35f9629bbd428874.jpg"
                         @class(['img-fluid']) style="width: 100px; height: 100px;" alt="">
                     </div>
 
