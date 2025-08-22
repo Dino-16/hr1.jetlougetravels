@@ -50,11 +50,6 @@
                 <i class="bi bi-award me-2"></i> Hiring Offer
             </a>
         </li>
-         <li class="nav-item">
-            <a href="{{ route('social') }}" class="nav-link text-dark {{  request()->is('social') ? 'active' : '' }} ">
-                <i class="bi bi-award me-2"></i> Manage Shoutouts
-            </a>
-        </li>
     </ul>
 
 </aside>
