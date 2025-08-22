@@ -21,3 +21,4 @@ Route::view('/hiring-offer', 'human_resource.am.hiring-offer')->name('hiring-off
 
 /* * * Social Recognition * * */
 Route::view('/social', 'social')->name('social');
+Route::view('/recognition', 'recognition')->name('social');
