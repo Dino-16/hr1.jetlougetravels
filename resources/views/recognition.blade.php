@@ -49,7 +49,8 @@
 
                     {{-- descrption --}}
                     <div>
-                        <p style="word-break: break-word;">sdfjlksdflskjfslkfslknflsdnflsknfsfsflknsdflknsdklfnslkdnfsnflskdnflsklknlksndfsdf</p>
+                        <p style="word-break: break-word;">sdfjlksdflskjfslkfslknflsdnflsknfsf
+                            VXKJXDJKFKXDFKJSDFJXDFKJXDKJFBXDJKBFKXJDBFKJBDXJKBFJKXBDFKJBXDKJFBXDFJKDBFXBFDKXNFLXDFKJsflknsdflknsdklfnslkdnfsnflskdnflsklknlksndfsdf</p>
                     </div>
 
                     {{-- date --}}
