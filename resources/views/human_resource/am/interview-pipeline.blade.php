@@ -83,69 +83,138 @@
 
         {{-- Facility Request --}}
         <div @class(['tab-pane', 'fade']) id="facility" role="tabpanel" aria-labelledby="facility-tab">
-            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+            <div @class(['mb-5', 'd-flex', 'justify-content-between'])>
                 <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
                 <button @class(['btn', 'btn-primary'])>Request Facility</button>
             </div>
-            <div @class(['table-responsive'])>
-                <table @class(['table', 'table-bordered', 'table-striped'])>
-                    <thead @class(['table-dark'])>
-                        <tr>
-                            <th>Request ID</th>
-                            <th>Facility</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Remarks</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>FR-001</td>
-                            <td>Conference Room</td>
-                            <td>2025-08-25</td>
-                            <td>Pending</td>
-                            <td>Note</td>
-                        </tr>
-                        <tr>
-                            <td>FR-002</td>
-                            <td>Training Hall</td>
-                            <td>2025-08-26</td>
-                            <td>Approved</td>
-                            <td>Note</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            {{-- header --}}
+            <div @class(['mb-5'])>
+                <h4>Facility Request</h4>
             </div>
+
+            {{-- conmtent --}}
+            <div class="row">
+
+                {{-- card --}}
+                <div @class(['col-md-4', 'border', 'p-3'])>
+
+                   <div>
+
+                        {{-- header section --}}
+                        <div @class(['row', 'p', 'mb-1'])>
+
+                            {{-- img --}}
+                            <div @class(['col-sm-3'])>
+                                <img src="https://i.pinimg.com/736x/81/0c/74/810c7414ea6541dd35f9629bbd428874.jpg"
+                                @class(['img-fluid', 'rounded-circle']) style="width: 60px; height: 60px;" alt="">
+                            </div>
+
+                            {{-- name, role --}}
+                            <div @class(['col-sm-9'])>
+                                <h6>Renzemark M. Olea</h6>
+                                <p>sss</p>
+                            </div>
+
+                        </div>
+
+                        {{--status --}}
+                        <div @class(['d-flex','mb', 'justify content-start'])>
+                            <p @class(['p-2', 'text-center', 'rounded-5', 'border'])
+                            style="width: 100px">
+                                Pending</p>
+                        </div>
+
+                        {{-- -button --}}
+                        <div @class(['d-flex', 'justify-content-end', 'mb-1', 'gap-2'])>
+                            <button @class(['btn', 'border'])>View Details</button>
+                            <button @class(['btn btn-primary'])>Follow Up</button>
+                        </div>
+
+                   </div>
+
+                </div>
+
+            </div>
+
         </div>
+
+
 
         {{-- Scheduling --}}
         <div @class(['tab-pane', 'fade']) id="scheduling" role="tabpanel" aria-labelledby="scheduling-tab">
-            <div @class(['mb-3', 'd-flex', 'justify-content-between'])>
+            <div @class(['mb-5', 'd-flex', 'justify-content-between'])>
                 <input @class(['form-control', 'w-25']) type="search" placeholder="Search">
                 <button @class(['btn', 'btn-primary'])>Add Schedule</button>
             </div>
-            <div @class(['table-responsive'])>
-                <table @class(['table', 'table-bordered', 'table-striped'])>
-                    <thead @class(['table-dark'])>
-                        <tr>
-                            <th>ID</th>
-                            <th>Facility</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Remarks</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>FR-003</td>
-                            <td>Training Hall</td>
-                            <td>2025-08-27</td>
-                            <td>Approved</td>
-                            <td>Note</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            {{-- header --}}
+            <div @class(['mb-5'])>
+                <h4>Schedule</h4>
             </div>
+
+            {{-- content --}}
+            <div class="row">
+
+                {{-- card --}}
+                <div @class(['col-md-4', 'border', 'p-3'])>
+
+                   <div>
+
+                        {{-- header section --}}
+                        <div @class(['row', 'p', 'mb-2', 'align-items-center'])>
+
+                            {{-- img --}}
+                            <div @class(['col-sm-3'])>
+                                <img src="https://i.pinimg.com/736x/81/0c/74/810c7414ea6541dd35f9629bbd428874.jpg"
+                                @class(['img-fluid', 'rounded-circle']) style="width: 60px; height: 60px;" alt="">
+                            </div>
+
+                            {{-- name, role --}}
+                            <div @class(['col-sm-9'])>
+                                <h6>Renzemark M. Olea</h6>
+                            </div>
+
+                        </div>
+
+
+                        {{--date, time, statuysb section --}}
+                        <div @class(['col-sm-12','d-flex','mb', 'justify content-betwen', 'align-items-center', 'gap-2'])>
+
+                            {{--date --}}
+                            <p  @class(['p-2', 'text-center', 'rounded-5', 'border'])
+                            style="width: 100px">10-10-10</p>
+
+                            {{-- dtime --}}
+                            <p  @class(['p-2', 'text-center', 'rounded-5', 'border'])
+                            style="width: 100px">12:00 pm</p>
+
+                            {{-- status --}}
+                            <p @class(['p-2', 'text-center', 'rounded-5', 'border'])
+                            style="width: 100px">
+                                Pending
+                            </p>
+
+                        </div>
+
+                        {{-- time, note--}}
+                        <div @class(['col-sm-12'])>
+                            <p>sdnfklfsdnlksd</p>
+                        </div>
+
+
+                        {{-- -button --}}
+                        <div @class(['d-flex', 'justify-content-end', 'mb-1', 'gap-2'])>
+                            <button @class(['btn', 'border'])>View Details</button>
+                            <button @class(['btn btn-danger'])>Delete</button>
+                        </div>
+
+                   </div>
+
+                </div>
+
+            </div>
+
         </div>
 
         {{-- Interviews --}}
