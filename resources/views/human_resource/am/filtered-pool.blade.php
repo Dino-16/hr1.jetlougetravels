@@ -36,7 +36,9 @@
                         {{--body --}}
                         <div id="collapseOne" @class(['accordion-collapse collapse show']) data-bs-parent="#accordionExample">
                             <div @class(['accordion-body']) >
-                                <p><strong>Aplicant Name:</strong> asdjkbsdbaslkjbdlalksdb</p>
+                                <div @class(['bg-secondary', 'p-1'])>
+                                    <p class="mb-0ww"><strong>Aplicant Name:</strong> asdjkbsdbaslkjbdlalksdb</p>
+                                </div>
                                 <p><strong>Aplicant Name:</strong> asdjkbsdbaslkjbdlalksdb</p>
                                 <p><strong>Aplicant Name:</strong> asdjkbsdbaslkjbdlalksdb</p>
                                 <p><strong>Aplicant Name:</strong> asdjkbsdbaslkjbdlalksdb</p>
