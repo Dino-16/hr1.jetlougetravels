@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('job_information', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('job_requisition_id')->constrained('job_requisitions');
             $table->string('job_title');
             $table->text('job_description');
             $table->text('job_summary');

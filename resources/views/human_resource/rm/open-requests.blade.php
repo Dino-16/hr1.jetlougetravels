@@ -5,7 +5,7 @@
 @section('breadcrumbs', 'Open Requests')
 
 @section('content')
-<div @class(['container-fluid','px-3','py-5','bg-white','shadow','rounded'])>
+<div @class(['container-fluid', 'bg-white','shadow','rounded'])>
 
     @livewire('r-m.job-requisitions')
 
