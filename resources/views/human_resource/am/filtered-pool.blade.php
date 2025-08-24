@@ -24,12 +24,6 @@
                                         Renzemark M. Olea
                                     </span>
 
-                                    {{-- status --}}
-                                    <span @class(['bg-success', 'p-2', 'text-white', 'rounded-2', 'text-center', 'ms-auto', 'me-3'])
-                                    style="width: 100px;">
-                                        Good
-                                    </span>
-
                             </button>
                         </h2>
 
