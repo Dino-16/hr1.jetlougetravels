@@ -18,6 +18,8 @@ Route::view('/filtered-pool', 'human_resource.am.filtered-pool')->name('filtered
 Route::view('/interview-pipeline', 'human_resource.am.interview-pipeline')->name('interview-pipeline');
 Route::view('/hiring-offer', 'human_resource.am.hiring-offer')->name('hiring-offer');
 
+/* * * New hire  *  * */
+Route::view('/requirements', 'requirements')->name('requirements');
 
 /* * * Social Recognition * * */
 Route::view('/social', 'social')->name('social');
