@@ -20,6 +20,7 @@ Route::view('/hiring-offer', 'human_resource.am.hiring-offer')->name('hiring-off
 
 /* * * New hire  *  * */
 Route::view('/requirements', 'requirements')->name('requirements');
+Route::view('/email-setup', 'email-setup')->name('email-setup');
 
 /* * * Social Recognition * * */
 Route::view('/social', 'social')->name('social');
